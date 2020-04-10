@@ -1,12 +1,10 @@
 @media (max-width: 768px) {
   .map-box {
     width: 100%!important;
-}
-
-.fscreen {
-display: none;
-}
-
+  }
+  .fscreen {
+    display: none;
+  }
 }
 
 .fscreen {
@@ -19,11 +17,11 @@ display: none;
 }
 
 .map-box {
-    width: 33.33%;
-   margin: 0 auto;
+  width: 33.33%;
+  margin: 0 auto;
 }
 
-body{
+body {
   font-family: arial, sans-serif;
   font-weight: 400;
   background: #eee;
@@ -36,27 +34,24 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 .imgbox {
   display: grid;
   height: 100%;
 }
+
 .center-fit {
   max-width: 100%;
   max-height: 100vh;
   margin: auto;
 }
 
-
 .sum-box {
   position: fixed;
   left: 10px;
   bottom: 20px;
   width: 200px;
-  height: 80px;
+  height: auto;
   background-color: #FFF;
-  
   color: #000;
   text-align: left;
   line-height: 1.5;
@@ -66,46 +61,47 @@ body{
   padding: 10px;
 }
 
-.mapify-popOver strong{
+.mapify-popOver strong {
   font-weight: 400;
-  font-size:24px;
+  font-size: 24px;
   line-height: 1em;
   display: block;
   margin-bottom: 10px;
   color: #000;
 }
 
-.mapify-popOver{
+.mapify-popOver {
   color: #000;
   font-size: 16px;
   height: 130px;
 }
 
-.mapify-popOver-content{
+.mapify-popOver-content {
   position: relative;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
 }
 
-.mapify-popOver.customPopOver{
+.mapify-popOver.customPopOver {
   background: #09f;
 }
 
-.mapify-hover{
-  fill:rgba(0,0,0,0.15);
+.mapify-hover {
+  fill: rgba(0, 0, 0, 0.15);
   stroke: #fff;
   stroke-width: 2;
 }
 
-.customHover{
-  fill:#09f;
+.customHover {
+  fill: #09f;
   stroke: #fff;
   stroke-width: 2;
 }
 
 /* POLYGON HOVER COLOR CHANGE : AFFECTED */
-.mapify-polygon[data-highlight]{
+
+.mapify-polygon[data-highlight] {
   fill: red;
   opacity: 0.5;
 }
