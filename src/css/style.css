@@ -3,6 +3,19 @@
     width: 100%!important;
 }
 
+.fscreen {
+display: none;
+}
+
+}
+
+.fscreen {
+  font-size: 30px;
+  cursor: pointer;
+  top: 50px;
+  position: absolute;
+  left: 750px;
+  z-index: 999999999999999999
 }
 
 .map-box {
