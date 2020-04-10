@@ -17,9 +17,21 @@
 		}
 
 	</style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163378551-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-163378551-1');
+	</script>
+
 </head>
 
 <body onload="get()">
+
 	<div>
 		<small style="color: rgb(180, 179, 179)">Disclaimer: The Data is collected from various sources, and may be
 			modified over time. No warranty expressed or implied is made regarding accuracy, adequacy, completeness,
@@ -329,7 +341,8 @@
 
 
 	<div class="sum-box">
-		<span> <b style="    color: red;background-color: red;border-radius: 50%;">***</b> <b id="tfarea">0</b> <b>Infected District</b></span><br>
+		<span> <b style="    color: red;background-color: red;border-radius: 50%;">***</b> <b id="tfarea">0</b>
+			<b>Infected District</b></span><br>
 		<span>Total Infected: </span><span id="ttf">0</span><br>
 		<span>Total Death: </span><span id="ttd">0</span><br>
 		<span>Death Percentage: </span><span id="tdp">0</span>%<br>
