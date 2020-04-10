@@ -329,7 +329,7 @@
 
 
 	<div class="sum-box">
-		<span>** : <b>Affected Area</b></span><br>
+		<span> <b id="tfarea">0</b> <b>Affected District</b></span><br>
 		<span>Total Affected: </span><span id="ttf">0</span><br>
 		<span>Total Death: </span><span id="ttd">0</span><br>
 		<span>Death Percentage: </span><span id="tdp">0</span>%<br>
@@ -381,6 +381,7 @@
 		$(document).ready(function () {
 			var i;
 			var af = 0;
+			var afarea = 0;
 
 			var td = 0;
 			var tdp = 0;
@@ -388,8 +389,13 @@
 
 			for (i = 0; i < 70; i++) {
 				af = af + parseInt($("area").eq(i).attr("af"));
+				if (parseInt($("area").eq(i).attr("af")) > 0) {
+					afarea++
+				}
 
 			}
+
+			$('#tfarea').html(afarea);
 
 			document.getElementById('ttf').innerHTML = af;
 
