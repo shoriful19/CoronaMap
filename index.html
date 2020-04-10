@@ -329,8 +329,8 @@
 
 
 	<div class="sum-box">
-		<span> <b id="tfarea">0</b> <b>Affected District</b></span><br>
-		<span>Total Affected: </span><span id="ttf">0</span><br>
+		<span> <b style="color:red">*</b> <b id="tfarea">0</b> <b>Infected District</b></span><br>
+		<span>Total Infected: </span><span id="ttf">0</span><br>
 		<span>Total Death: </span><span id="ttd">0</span><br>
 		<span>Death Percentage: </span><span id="tdp">0</span>%<br>
 		<span>Average Death: </span><span id="ad">0</span>
@@ -364,7 +364,7 @@
 					var avdth = af / dth
 					avdth = avdth == 'undefine' || avdth == 'Infinity' ? 0 : Number(avdth).toFixed(3);
 
-					return "" + zone.attr("data-title").toUpperCase() + "<br>" + "<small>Total Population: " + zone.attr("tp") + "<br>" + "Affected: " + zone.attr("af") + "<br>" + "Percentage of affection: " + paf + "%<br>" + "Death: " + zone.attr("dth") + "<br>" + "Percentage of death: " + pdth + "% <br> Average  death: " + avdth + " </small>";
+					return "" + zone.attr("data-title").toUpperCase() + "<br>" + "<small>Total Population: " + zone.attr("tp") + "<br>" + "Infected : " + zone.attr("af") + "<br>" + "Percentage of Infection : " + paf + "%<br>" + "Death: " + zone.attr("dth") + "<br>" + "Percentage of death: " + pdth + "% <br> Average  death: " + avdth + " </small>";
 
 				},
 				delay: 0.7,
